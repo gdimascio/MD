@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+
+/*_______________________________________________________________*/
+.header-main > a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header-main-logo{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.header-main-titulo1{
+    font-size: 20px;
+}
+.header-main-titulo2{
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+
+
+/*_______________________________________________________________*/
+
+#wrapper > .bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #212931;
+    background-image: url(../img/FCE-UBA-1.jpg);
+    background-size: cover;
+    background-position: center, center, top center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/*_______________________________________________________________*/
+.footer-main{
+    position: fixed;
+    bottom: 0;
+    /* background-color: #BF4539; */
+    background-color: rgba(191,69,57,0.75);
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+.footer-main > .footer-contacto{
+    text-align: left;
+    font-size: 15px;
+    color: #F28D35;
+    padding: 2px 0;
+}
+.footer-main > .footer-copyright{
+    text-align: center;
+    font-size: 10px;
+    color: #BABABA;
+    margin-top: 5px;
+}
