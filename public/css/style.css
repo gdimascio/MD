@@ -14,16 +14,16 @@ body{
 
 
 /*_______________________________________________________________*/
-.header-main > a{
+.header-main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
+    margin: 0 5vw;
 }
 .header-main-logo{
     width: 150px;
     height: 150px;
-    background-color: red;
+    background-color: red; /**/
 }
 .header-main-titulo1{
     font-size: 20px;
@@ -34,19 +34,10 @@ body{
 }
 
 
-
-
-
 /*_______________________________________________________________*/
-
-#wrapper > .bg {
+.bg1, .bg2, .bg3 {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
     background-color: #212931;
-    background-image: url(../img/FCE-UBA-1.jpg);
     background-size: cover;
     background-position: center, center, top center;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -54,7 +45,15 @@ body{
     z-index: -1;
     overflow: hidden;
 }
-
+.bg1 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.bg2, .bg3{
+    display: none;
+}
 
 /*_______________________________________________________________*/
 .footer-main{
@@ -64,17 +63,89 @@ body{
     background-color: rgba(191,69,57,0.75);
     width: 100%;
     margin: 20px 0;
-    padding: 10px 5px;
+    padding: 10px 0;
 }
-.footer-main > .footer-contacto{
+.footer-contacto{
     text-align: left;
     font-size: 15px;
     color: #F28D35;
     padding: 2px 0;
+    margin-left: 4vw;
 }
-.footer-main > .footer-copyright{
+.footer-copyright{
     text-align: center;
     font-size: 10px;
     color: #BABABA;
-    margin-top: 5px;
+    margin-top: 5vh;
+}
+
+
+
+/*_______________________________________________________________*/
+@media (min-width:768px){
+    .br{
+        display: none;
+    }
+}
+
+
+/*_______________________________________________________________*/
+@media(min-width:1024px){
+    body{
+        font-size: +10px;
+    }
+    .header-main{
+        margin: 0;
+        position: fixed;
+        width: 50vw;
+        height: 25vh;
+        background-color: #BF4539;
+        justify-content: space-around;
+    }
+    .bg2, .bg3{
+        display: block;
+    }
+    .bg1{
+        width: 50vw;
+        height: 50vh; 
+        top: unset;  
+        right: 0;
+        bottom: unset;
+        left: unset;
+    }
+    .bg2{
+        width: 50vw;
+        height: 50vh;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+    }
+    .bg3{
+        width: 50vw;
+        height: 50vh;
+        top: 25vh;
+        right: unset;
+        bottom: unset;
+        left: 0;
+    }
+    .footer-main{
+        background-color: #BF4539;
+        margin: 0;
+        width: 50vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-contacto{
+        text-align: center;
+        margin: 0;
+    }
+
+
+
+
+
+
 }
