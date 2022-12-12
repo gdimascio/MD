@@ -21,16 +21,37 @@ body{
     margin: 0 5vw;
 }
 .header-main-logo{
+    display: inline-block;
     width: 150px;
     height: 150px;
     background-color: red; /**/
+}
+.header-main-titulo{
+    opacity: 0;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    margin-top: 50px;
+}
+@keyframes anim {
+    0%{
+        opacity: 0%;
+        margin-top: 50px;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 0;
+    }
 }
 .header-main-titulo1{
     font-size: 20px;
 }
 .header-main-titulo2{
-    font-size: 15px;
+    font-size: 17px;
     font-style: italic;
+    font-weight: 400;
 }
 
 
@@ -64,6 +85,21 @@ body{
     width: 100%;
     margin: 20px 0;
     padding: 10px 0;
+
+    animation-name: anim2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+@keyframes anim2 {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 .footer-contacto{
     text-align: left;
@@ -102,6 +138,12 @@ body{
         background-color: #BF4539;
         justify-content: space-around;
     }
+    .header-main-titulo1{
+        font-size: 3vw;
+    }
+    .header-main-titulo2{
+        font-size: 2.6vw;
+    }
     .bg2, .bg3{
         display: block;
     }
@@ -137,10 +179,28 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        animation-name: none;
+        opacity: 100%;
     }
     .footer-contacto{
         text-align: center;
         margin: 0;
+
+        animation-name: anim2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        }
+    .footer-copyright{
+        animation-name: anim2;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
     }
 
 
