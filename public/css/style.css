@@ -16,9 +16,10 @@ body{
 /*_______________________________________________________________*/
 .header-main{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5vw;
+    margin: 20px 5vw;
 }
 .header-main-logo{
     display: inline-block;
