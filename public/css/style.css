@@ -107,8 +107,8 @@ body{
 .footer-contacto{
     text-align: left;
     font-size: 15px;
-    color: #F28D35;
-    padding: 2px 0;
+    color: #F5CAA5;
+        padding: 2px 0;
     margin-left: 4vw;
 }
 .footer-copyright{
@@ -136,8 +136,9 @@ body{
     .header-main{
         margin: 0;
         position: fixed;
+        right: 0;
         width: 50vw;
-        height: 25vh;
+        height: 50vh;
         background-color: #BF4539;
         justify-content: space-around;
     }
@@ -151,6 +152,7 @@ body{
         display: block;
     }
     .bg1{
+        display: none;
         width: 50vw;
         height: 50vh; 
         top: unset;  
@@ -169,7 +171,7 @@ body{
     .bg3{
         width: 50vw;
         height: 50vh;
-        top: 25vh;
+        top: 0;
         right: unset;
         bottom: unset;
         left: 0;
@@ -178,7 +180,7 @@ body{
         background-color: #BF4539;
         margin: 0;
         width: 50vw;
-        height: 25vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -189,6 +191,7 @@ body{
     .footer-contacto{
         text-align: center;
         margin: 0;
+        color: #F28D35;
 
         animation-name: anim2;
         animation-duration: 3s;
