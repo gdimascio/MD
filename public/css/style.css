@@ -21,13 +21,6 @@ body{
     align-items: center;
     margin: 20px 5vw;
 }
-.header-main-logo{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: red; /**/
-    cursor: default;
-}
 .header-main-titulo{
     opacity: 0;
     animation-name: anim;
